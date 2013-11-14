@@ -8,17 +8,16 @@ def cr():
 		print "T"
 
 def cr2():	
-	ui=float(raw_input("Enter the chances you want to get 'H': "))
-	x = 10
-	while ui%1!=0:
-		ui=ui*10
-		x = x*10
-	from random import randint
-	num1=randint(1,ui)
-	num2=x-x/ui
-	num3=x/ui
-	if 
+	import random
+	input=int(raw_input("enter the precentage to get h: "))
+	randomfloat = random.random()
+	print randomfloat
+	input = input/100.0
+	print input
+	if input>randomfloat:
 		print "H"
-	elif:
+	else:
 		print "T"
+cr2()
+	
 
