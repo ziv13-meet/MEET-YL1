@@ -1,0 +1,23 @@
+class Integer(object):
+	def __init__(self,num,status):
+		self.number = num
+		self.status = status
+
+	def display(self):
+		if (self.status=='-'):
+			print self.status+str(self.number)
+		else:
+			print self.number
+
+class NegativeInteger(Integer):
+	def __init__(self,number):
+		super(NegativeInteger,self).__init__(number,'-')
+	def display(self):
+		num2 = Integer(number,'-')
+		num2.display()
+
+if __name__=="__main__":
+	num1 = Integer(20,'+')
+	num1.display()
+	num2 = NegativeInteger(num1. number)
+	num2.display()
